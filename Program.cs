@@ -33,7 +33,7 @@ namespace ConsoleApp1
             await Upload(containerClient, 10L * 1024);
             await Upload(containerClient, 50L * 1024);
             await Upload(containerClient, 512L * 1024);
-            await Upload(containerClient, 512L * 1024 *1024);
+            await Upload(containerClient, 512L * 1024 *1024,10);
 
             await containerClient.DeleteAsync();
 
