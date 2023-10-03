@@ -32,10 +32,10 @@ namespace ConsoleApp1
 
             await containerClient.CreateIfNotExistsAsync();
 
-            //await Upload(containerClient, 10L * 1024);
-            //await Upload(containerClient, 50L * 1024);
-            //await Upload(containerClient, 512L * 1024);
-            //await Upload(containerClient, 512L * 1024 * 1024, 10);
+            await Upload(containerClient, 10L * 1024);
+            await Upload(containerClient, 50L * 1024);
+            await Upload(containerClient, 512L * 1024);
+            await Upload(containerClient, 512L * 1024 * 1024, 10);
 
             var filesConnStr = config["filesConnStr"];
             var sharename = config["sharename"];
