@@ -50,12 +50,11 @@ namespace ConsoleApp1
 
 
             await Upload(sharedirectoryclient, 10L * 1024);
-            //await Upload(sharedirectoryclient, 50L * 1024);
-            //await Upload(sharedirectoryclient, 512L * 1024);
-            //await Upload(sharedirectoryclient, 512L * 1024 * 1024, 10);
+            await Upload(sharedirectoryclient, 50L * 1024);
+            await Upload(sharedirectoryclient, 512L * 1024);
+            await Upload(sharedirectoryclient, 512L * 1024 * 1024, 10);
 
         }
-
 
         private static Stream CreateDummyFile(long length)
         {
